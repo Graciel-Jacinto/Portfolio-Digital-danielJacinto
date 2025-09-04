@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+
+}
+
+body {
+    background: #000000;
+    color: white;
+}
+
+/*BARRA DE NAVEGCAO*/
+.barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 25px 0px 25px 0px;
+    border-bottom: 1px solid #1a1a1a;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+
+}
+
+.links ul {
+    display: flex;
+}
+
+.links li {
+    list-style: none;
+    margin-left: 15px;
+    margin-right: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+}
+.links a:hover{
+    color: #0084ff;
+    transition: 0.5s;
+    font-size: 15px;
+
+}
+
+/*LOGOTIPO*/
+.logotipo span {
+    color: #0084ff;
+
+}
+
+/*BOTAO NAV*/
+
+.NAVBOTAO button{
+    background-color: #0084ff;
+    border: none;
+    padding: 17px 15px 17px 15px;
+    border-radius: 100px;
+    transition: transform 0.3s ease;
+
+}
+
+.NAVBOTAO button:hover{
+    transform: scale(1.1);
+    
+}
+
+/*HEROSECTION*/
+.herosection {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    width: 1200px;
+    align-items: center;
+    padding: 80px 0px 80px 0px;
+}
+
+.hero-imagem {
+    width: 600px;
+
+}
+
+.hero-imagem img {
+    width: 100%;
+}
+
+.hero-detalis {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hero-detalis h3 {
+    background-color: #0084ff42;
+    border-radius: 80px;
+    width: 109px;
+     padding: 4px 9px 4px 9px;      
+    font-size: 15px;
+
+}
+
+.hero-detalis h1 {
+    color: white;
+    font-size: 40px;
+    line-height: 60px;
+}
+
+.hero-detalis span {
+    color: #0084ff;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.hero-detalis p {
+    line-height: 20px;
+    font-size: 15px;
+    font-weight: 300;
+    padding: 20px 0px 0px 0px;
+}
+
+.hero-imagem {
+    width: 600px;
+}
+
+.hero-socias {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 30px 0px 30px 0px;
+    gap: 15px;
+}
+
+.hero-socias button {
+    background-color: #0084ff;
+    border-radius: 60px;
+    padding: 12px 10px 12px 10px;
+}
+.hero-socias a{
+    color: white;
+    border: none;
+    
+    
+}
+
+.icons i {
+    background-color: #0084ff;
+    border-radius: 60px;
+    padding: 9px;
+    gap: 8px;
+    border: 2px solid white;
+}
+
+.button-details button {
+    padding: 17px 15px 17px 15px;
+    color: white;
+    gap: 5px;
+
+}
+
+/*SECAO DE LOGOTIPOS*/
+.slide-brand {
+    display: flex;
+    margin: 0 auto;
+    background-color: #ffffff;
+    gap: 5px;
+
+}
+
+.slide {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 20px 0px 20px 0px;
+}
+
+.slide img {
+    width: 90%;
+   
+}
+
+/*SECAO DE BIO*/
+.bio {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 1200px;
+    justify-content: space-between;
+    padding: 80px 0px 80px 0px;
+    gap: 60px;
+
+}
+
+.bio-img {
+    width: 600px;
+    border: 2px solid #0084ff;
+    border-radius: 15px;
+}
+
+.bio-img img {
+    width: 100%;
+    border-radius: 15px;
+
+}
+
+.bio-info {
+    width: 600px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.bio-info #sobre-mim {
+    background-color: #0084ff42;
+    width: 150px;
+    padding: 4px 4px 4px 5px;
+    font-size: 15px;
+}
+
+.bio-info h1 {
+    color: white;
+    font-size: 40px;
+    line-height: 50px;
+}
+
+.bio-info span {
+    color: #0084ff;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.bio-info p {
+    line-height: 20px;
+    font-size: 14px;
+    padding: 20px 0px 25px 0px;
+}
+
+.bio-cta {
+    display: flex;
+    gap: 8px;
+    padding: 40px 0px 40px 0px;
+}
+
+.numeros {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #0084ff;
+    padding: 15px;
+    background-color: #0084ff42;
+    border-radius: 12px;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.numeros h3 {
+    font-size: 30px;
+}
+
+.numeros p {
+    font-size: 15px;
+}
+
+.botao-cta button {
+    background-color: #0084ff;
+    color: white;
+    border-radius: 60px;
+    padding: 12px 10px 12px 10px;
+}
+
+/*AREA DE HABILIADDES*/
+.skilss-all {
+    align-items: center;
+    justify-content: center;
+    height: 450px;
+
+}
+
+.skilss-all h1 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.skilss-all span {
+    color: #0084ff;
+}
+
+.soft-skilss {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+    gap: 20px;
+    padding: 50px 0px 0px 0px;
+}
+
+.skills {
+    text-align: start;
+    width: 400px;
+    background-color: #0084ff;
+    padding: 40px 40px 40px 40px;
+}
+
+.skills h3 {
+    color: white;
+    font-size: 20px;
+}
+
+.skills i {
+    font-size: 160%;
+}
+
+/*AREA DE projectos*/
+.Portifolio {
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+}
+
+.Portifolio h1 {
+    font-size: 40px;
+}
+
+.Portifolio span {
+    font-size: 40px;
+    color: #0084ff;
+}
+
+.headerprojectos {
+    display: flex;
+    width: 1200px;
+    gap: 10px;
+    margin: 0 auto;
+    justify-content: center;
+    padding: 30px 0px 30px 0px;
+}
+
+.projectos {
+    height: 450px;
+
+}
+
+.imagem {
+    width: 400px;
+    position: relative;
+    overflow: hidden;
+}
+
+.imagem img {
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+/* overlay */
+.imagem {
+    position: relative; /* IMPORTANTE: para que o .conteudoova fique absoluto em relação à imagem */
+    overflow: hidden;   /* opcional: corta qualquer conteúdo que saia da imagem */
+}
+
+.conteudoova {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.6s ease;
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+}
+
+.imagem:hover .conteudoova {
+    opacity: 1;
+}
+
+.conteudoova h1 {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 43px;
+}
+
+.conteudoova button {
+    border: 1px solid #0084ff;
+    border-radius: 30px;
+    background-color: transparent;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+}
+
+
+/*FOOTER*/
+footer {
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    height: 200px;
+    background-color: #0084ff;
+}
+
+.Footergeral {
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    height: 250px;
+    background-color: #0084ff;
+    padding: 60px 0px;
+}
+
+.Footergeral hr {
+    width: 80%;
+    text-align: center;
+    justify-content: space-between;
+    display: flex;
+    margin: auto;
+
+}
+
+.conteudofooter {
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+}
+
+.icons {
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+
+}
+
+.COPY {
+    text-align: center;
+    padding: 15px 0px 10px 0px;
+}
