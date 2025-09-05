@@ -79,6 +79,10 @@ body {
 }
 
 /*HEROSECTION*/
+.GERALSECTION{
+    background-color: #18181a;
+}
+
 .herosection {
     display: flex;
     margin: 0 auto;
@@ -95,6 +99,12 @@ body {
 
 .hero-imagem img {
     width: 100%;
+    animation: float 3s ease-in-out infinite;
+}
+@keyframes float{
+    0% {transform: translateY(0px);}
+    50%{transform: translateY(-10px);}
+    100%{ transform: translateY(0px);}
 }
 
 .hero-detalis {
@@ -172,29 +182,14 @@ body {
 }
 
 /*SECAO DE LOGOTIPOS*/
-.slide-brand {
-    display: flex;
-    margin: 0 auto;
-    background-color: #ffffff;
-    gap: 5px;
 
-}
 
-.slide {
-    display: flex;
-    width: 1200px;
-    margin: 0 auto;
-    gap: 20px;
-    justify-content: space-between;
-    padding: 20px 0px 20px 0px;
-}
-
-.slide img {
-    width: 90%;
-   
-}
 
 /*SECAO DE BIO*/
+
+.section-info{
+    background-color:  #111111;
+}
 .bio {
     display: flex;
     align-items: center;
@@ -226,9 +221,10 @@ body {
 }
 
 .bio-info #sobre-mim {
-    background-color: #0084ff42;
-    width: 150px;
-    padding: 4px 4px 4px 5px;
+   background-color: #0084ff42;
+    border-radius: 80px;
+    width: 83px;
+     padding: 4px 9px 4px 9px;      
     font-size: 15px;
 }
 
@@ -247,26 +243,31 @@ body {
 .bio-info p {
     line-height: 20px;
     font-size: 14px;
-    padding: 20px 0px 25px 0px;
+    padding: 10px 0px 10px 0px;
 }
 
 .bio-cta {
     display: flex;
     gap: 8px;
-    padding: 40px 0px 40px 0px;
+    padding: 20px 0px 40px 0px;
 }
 
 .numeros {
     display: flex;
     flex-direction: column;
-    border: 1px solid #0084ff;
-    padding: 15px;
+    width: 200px;
+    padding: 10px 0px 2px 20px;
     background-color: #0084ff42;
     border-radius: 12px;
     justify-content: space-between;
     align-items: start;
 }
 
+.numeros span{
+    color: #0084ff;
+    font-size: 35px;
+    font-weight: 600;
+}
 .numeros h3 {
     font-size: 30px;
 }
@@ -279,6 +280,7 @@ body {
     background-color: #0084ff;
     color: white;
     border-radius: 60px;
+    border: #0084ff;
     padding: 12px 10px 12px 10px;
 }
 
@@ -312,7 +314,7 @@ body {
 .skills {
     text-align: start;
     width: 400px;
-    background-color: #0084ff;
+    background-color: #0084ff42;
     padding: 40px 40px 40px 40px;
 }
 
@@ -324,6 +326,7 @@ body {
 .skills i {
     font-size: 160%;
 }
+/*Barra de Progresso*/
 
 /*AREA DE projectos*/
 .Portifolio {
