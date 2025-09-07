@@ -316,6 +316,7 @@ body {
     padding: 30px;
     border-radius: 15px;
     transition: transform 0.3s ease;
+    width: 400px;
 }
 
 .skills:hover {
@@ -370,7 +371,13 @@ body {
 }
 
 .projectos {
-    height: 450px;
+    width: 100%;
+    max-width: 400px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
 
 }
 
@@ -388,8 +395,8 @@ body {
 
 /* overlay */
 .imagem {
-    position: relative; /* IMPORTANTE: para que o .conteudoova fique absoluto em relação à imagem */
-    overflow: hidden;   /* opcional: corta qualquer conteúdo que saia da imagem */
+    position: relative;
+    overflow: hidden;   
 }
 
 .conteudoova {
@@ -428,47 +435,63 @@ body {
     color: white;
     cursor: pointer;
 }
-
+.conteudoova button:hover {
+    background-color: #0084ff;
+    color: #fff;
+}
 
 /*FOOTER*/
 footer {
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
-    height: 200px;
     background-color: #0084ff;
+    color: #fff;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
 }
 
 .Footergeral {
-    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    max-width: 1200px;
     margin: 0 auto;
-    height: 250px;
-    background-color: #0084ff;
-    padding: 60px 0px;
+    text-align: center;
+    gap: 20px;
+}
+
+.conteudofooter h2 {
+    font-size: 28px;
+    margin: 0;
+    font-weight: 500;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.icons a {
+    color: #fff;
+    font-size: 24px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.icons a:hover {
+    color: #000000; 
+    transform: scale(1.2);
 }
 
 .Footergeral hr {
     width: 80%;
-    text-align: center;
-    justify-content: space-between;
-    display: flex;
-    margin: auto;
-
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    margin: 20px 0;
 }
 
-.conteudofooter {
-    text-align: center;
-    padding: 20px 0px 20px 0px;
+.COPY p {
+    font-size: 14px;
+    margin: 0;
+    color: #f0f0f0;
 }
 
-.icons {
-    text-align: center;
-    padding: 20px 0px 20px 0px;
-
-}
-
-.COPY {
-    text-align: center;
-    padding: 15px 0px 10px 0px;
-}
+/*tabs*/
