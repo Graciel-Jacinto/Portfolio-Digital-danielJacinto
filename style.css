@@ -284,17 +284,16 @@ body {
     padding: 12px 10px 12px 10px;
 }
 
-/*AREA DE HABILIADDES*/
+/* AREA DE HABILIDADES */
 .skilss-all {
     align-items: center;
     justify-content: center;
-    height: 450px;
-
+    padding: 80px 0;
 }
 
 .skilss-all h1 {
     text-align: center;
-    font-size: 30px;
+    font-size: 35px;
 }
 
 .skilss-all span {
@@ -302,30 +301,44 @@ body {
 }
 
 .soft-skilss {
-    display: flex;
-    margin: 0 auto;
-    justify-content: space-between;
-    align-items: center;
-    width: 1200px;
+   display: flex;
+   flex-direction: row;
     gap: 20px;
-    padding: 50px 0px 0px 0px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 50px auto 0 auto;
+    padding: 0 20px;
 }
 
 .skills {
     text-align: start;
-    width: 400px;
     background-color: #0084ff42;
-    padding: 40px 40px 40px 40px;
+    padding: 30px;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.skills:hover {
+    transform: translateY(-8px);
 }
 
 .skills h3 {
     color: white;
     font-size: 20px;
+    margin-top: 15px;
 }
 
 .skills i {
-    font-size: 160%;
+    font-size: 220%;
+    color: #0084ff;
 }
+
+.skills p {
+    font-size: 16px;
+    color: #eeecec;
+}
+
+
 /*Barra de Progresso*/
 
 /*AREA DE projectos*/
