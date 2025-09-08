@@ -1,19 +1,14 @@
+const tabButtons = document.querySelectorAll('.tab-btn');
+const tabContents = document.querySelectorAll('.content');
 
-const buttons = document.querySelectorAll('.tab-button');
-const contents = document.querySelectorAll('.tab-content');
+tabButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const target = btn.getAttribute('data-target');
 
-buttons.forEach(button => {
-    button.addEventListener('click', () => {
-        // Remove "active" de todos os botões
-        buttons.forEach(btn => btn.classList.remove('active'));
-        // Adiciona "active" no botão clicado
-        button.classList.add('active');
+    tabButtons.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
 
-        // Remove "active" de todos os conteúdos
-        contents.forEach(content => content.classList.remove('active'));
-        // Adiciona "active" no conteúdo correspondente
-        const tabId = button.getAttribute('data-tab');
-        document.getElementById(tabId).classList.add('active');
-    });
+    tabContents.forEach(c => c.classList.remove('show'));
+    document.getElementById(target).classList.add('show');
+  });
 });
-
