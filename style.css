@@ -568,3 +568,134 @@ li{
     flex-direction: column;
   }
 }
+
+/*Contacto*/
+.geral-contacto{
+    background-color: #111111;
+    padding: 70px 0;
+}
+
+.contacto{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 auto;
+    width: 1200px;
+    gap: 40px; 
+}
+
+.contacto-info {
+    width: 600px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: start; 
+    margin: 0 auto;
+    
+}
+.contacto-info span{
+    font-weight: 700;
+    color: #0084ff;
+}
+.contacto-info p span{
+    color: #0084ff;
+}
+.contacto-info p{
+   
+}
+
+.contacto-info h3{
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.contacto-info h1{
+    font-size: 45px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    width: 100%;
+    color: #fff;
+}
+
+.contacto-info p{
+    font-size: 15px;
+    margin-bottom: 30px;
+    width: 75%;
+    color: #ccc;
+}
+
+.contacto-icon{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.icone-contacto i{
+    font-size: 32px;
+    color: #0084ff;
+}
+
+.conteudo-contacto h3{
+    margin: 0;
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.conteudo-contacto p{
+    margin: 2px 0;
+    color: #ccc;
+    font-size: 15px;
+}
+
+/* Formulário */
+.contacto-form{
+    width: 400px;
+    background-color: #242424;
+    padding: 50px;
+    border-radius: 40px;
+}
+
+.inputs-form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label{
+    margin-bottom: 5px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.form-group input,
+.form-group textarea{
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    font-size: 14px;
+}
+
+button{
+    margin-top: 10px;
+    padding: 15px 15px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+button:hover{
+    background-color: #0056b3;
+}
