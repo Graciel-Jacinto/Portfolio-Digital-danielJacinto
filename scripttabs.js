@@ -1,14 +1,19 @@
-const tabButtons = document.querySelectorAll('.tab-btn');
-const tabContents = document.querySelectorAll('.content');
+ // Marca o link activo à medida que corres a página (IntersectionObserver)
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('nav a');
 
-tabButtons.forEach(btn => {
-  btn.addEventListener('click', () => {
-    const target = btn.getAttribute('data-target');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      const id = entry.target.id;
+      const link = document.querySelector(`nav a[href="#${id}"]`);
+      if (entry.isIntersecting) {
+        navLinks.forEach(a => a.classList.remove('active'));
+        if (link) link.classList.add('active');
+      }
+    });
+  }, { threshold: 0.5 });
 
-    tabButtons.forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
+  sections.forEach(section => observer.observe(section));
+  
 
-    tabContents.forEach(c => c.classList.remove('show'));
-    document.getElementById(target).classList.add('show');
-  });
-});
+  

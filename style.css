@@ -20,10 +20,11 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1200px;
+    width: 1300px;
     margin: 0 auto;
     padding: 25px 0px 25px 0px;
     border-bottom: 1px solid #1a1a1a;
+    
 }
 
 .links {
@@ -87,7 +88,7 @@ body {
     display: flex;
     margin: 0 auto;
     justify-content: space-between;
-    width: 1200px;
+    width: 1300px;
     align-items: center;
     padding: 80px 0px 80px 0px;
 }
@@ -194,7 +195,7 @@ body {
     display: flex;
     align-items: center;
     margin: 0 auto;
-    width: 1200px;
+    width: 1300px;
     justify-content: space-between;
     padding: 80px 0px 80px 0px;
     gap: 60px;
@@ -305,7 +306,7 @@ body {
    flex-direction: row;
     gap: 20px;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 50px auto 0 auto;
     padding: 0 20px;
 }
@@ -346,7 +347,7 @@ body {
 .Portifolio {
     display: flex;
     flex-direction: column;
-    width: 1200px;
+    width: 1300px;
     margin: 0 auto;
     text-align: center;
     padding: 10px 0px 10px 0px;
@@ -363,23 +364,25 @@ body {
 
 .headerprojectos {
     display: flex;
-    width: 1200px;
-    gap: 10px;
+    gap: 0px;
+    max-width: 1300px;
     margin: 0 auto;
-    justify-content: center;
-    padding: 30px 0px 30px 0px;
+    justify-content: space-between; /* centraliza os itens */
+    padding: 30px 0px 40px 0px;
+    
 }
 
+
 .projectos {
-    width: 100%;
-    max-width: 400px;
-    height: 300px;
+    width: 480px; 
+    max-width: 600px; /* nunca passa disso */
     overflow: hidden;
     border-radius: 15px;
     box-shadow: 0 6px 20px rgba(0,0,0,0.2);
     transition: transform 0.3s ease;
-
+ 
 }
+
 
 .imagem {
     width: 400px;
@@ -571,17 +574,20 @@ li{
 
 /*Contacto*/
 .geral-contacto{
-    background-color: #111111;
-    padding: 70px 0;
+    background-color: #000000;
+    padding: 70px 0px 70px 0px;
+    width: 1300px;
+    justify-content: space-between;
+    display: flex;
+    margin: 0 auto;
 }
 
 .contacto{
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     margin: 0 auto;
-    width: 1200px;
-    gap: 40px; 
+    width: 1300px;
+  
 }
 
 .contacto-info {
@@ -650,11 +656,12 @@ li{
     margin: 2px 0;
     color: #ccc;
     font-size: 15px;
+    width: 100%;
 }
 
 /* Formulário */
 .contacto-form{
-    width: 400px;
+    width: 600px;
     background-color: #242424;
     padding: 50px;
     border-radius: 40px;
@@ -698,4 +705,87 @@ button{
 
 button:hover{
     background-color: #0056b3;
+}
+/*ROLAGEM SUAVE*/
+html {
+  scroll-behavior: smooth;
+}
+section {
+  scroll-margin-top: 80px; /* ajustar à altura do header */
+}
+/*VIDEO INFRAME*/
+.vido-frame{
+
+    justify-content: space-between;
+    display: flex;
+    margin: 0 auto;
+    padding: 20px 0px;
+}
+/*DETALHES DE PROJECTOS*/
+.info-projecto{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1300px;
+    margin: 0 auto;
+    align-items: center;
+    padding: 70px 0px 70px 0px;
+    gap: 20px;
+}
+
+.detalhes-cliente{
+   display: flex;
+    flex-direction: column; /* empilha os elementos verticalmente */
+    justify-content: flex-start; /* tudo no topo */
+    height: 340px;
+    padding: 0;
+
+    width: 300px;
+    padding: 0px;
+}
+.detalhes-cliente h1{
+    font-size: 24px;
+    font-weight: 400;
+    list-style: 29px;
+}
+.detalhes-client h3{
+    font-size: 19px;
+    line-height: 31px;
+    font-weight: 400;
+  
+}
+
+
+.detalhes-projectos{
+  justify-content: space-between;
+  width: 1300px;
+    justify-content: space-between;
+    
+}
+.Desafio-projecto h1{
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 700;
+    font-style: normal;
+}
+.Desafio-projecto p{
+    font-size: 19px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 31px;
+    padding: 15px 0px 15px 0px;
+}
+
+/*Secao e outros trabalhos*/
+.outros-trabalhos{
+    width: 1300px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.titulo-trabalhos{
+    width: 1300px;
+    display: flex;
 }
