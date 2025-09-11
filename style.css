@@ -715,11 +715,15 @@ section {
 }
 /*VIDEO INFRAME*/
 .vido-frame{
-
     justify-content: space-between;
     display: flex;
     margin: 0 auto;
     padding: 20px 0px;
+  height: 750px;
+}
+.vido-frame img{
+    width: 100%;
+    
 }
 /*DETALHES DE PROJECTOS*/
 .info-projecto{
