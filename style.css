@@ -719,7 +719,7 @@ section {
     display: flex;
     margin: 0 auto;
     padding: 20px 0px;
-  height: 750px;
+  height: 850px;
 }
 .vido-frame img{
     width: 100%;
@@ -792,4 +792,49 @@ section {
 .titulo-trabalhos{
     width: 1300px;
     display: flex;
+}
+
+
+.post-redes{
+    width: 1300px;
+    justify-content: space-between;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    padding: 20px 0px 40px 0px;
+}
+
+.Fedd-redes{
+    display: flex;
+    gap: 10px;
+    padding: 20px 0px 40px 0px;
+}
+.instagram-container{
+    width: 600px;
+}
+
+
+
+
+
+.imagesdoprojecto{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.imagens2{
+    display: flex;
+}
+.imagens1 img{
+    width: 100%;
+}
+.imagens2 img{
+    width: 100%;
+}
+
+.imagens3 img{
+    width: 100%;
+    height: 550px;
 }
