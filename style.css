@@ -368,7 +368,7 @@ body {
     max-width: 1300px;
     margin: 0 auto;
     justify-content: space-between; /* centraliza os itens */
-    padding: 30px 0px 40px 0px;
+    padding: 20px 0px 20px 0px;
     
 }
 
@@ -715,15 +715,21 @@ section {
 }
 /*VIDEO INFRAME*/
 .vido-frame{
+    width: 1300px;
     justify-content: space-between;
     display: flex;
     margin: 0 auto;
     padding: 20px 0px;
-  height: 850px;
+    height: 480px;
+    border-radius: 60px;
+    
+    
+  
 }
 .vido-frame img{
     width: 100%;
-    
+    height: 100%;
+    border-radius: 60px;
 }
 /*DETALHES DE PROJECTOS*/
 .info-projecto{
@@ -733,7 +739,7 @@ section {
     width: 1300px;
     margin: 0 auto;
     align-items: center;
-    padding: 70px 0px 70px 0px;
+    padding: 50px 0px 50px 0px;
     gap: 20px;
 }
 
@@ -837,4 +843,123 @@ section {
 .imagens3 img{
     width: 100%;
     height: 550px;
+}
+
+/*Projectos*/
+.Titulo-project{
+    justify-content: space-between;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0px 20px 0px;
+}
+.Titulo-project h1{
+    color: #007BFF;
+    font-size: 45px;
+}
+.Titulo-project p{
+    width: 60%;
+    margin: 0 auto;
+    font-weight: 400;
+}
+@media (max-width: 1400px) {
+.barra, .herosection, .bio, .Portifolio, .geral-contacto, .vido-frame, .info-projecto, .detalhes-projectos, .outros-trabalhos {
+width: 95%;
+}
+
+
+.hero-imagem, .hero-detalis, .bio-img, .bio-info, .contacto-info, .projectos {
+width: 100%;
+}
+
+
+.herosection {
+flex-direction: column;
+padding: 40px 0;
+gap: 20px;
+}
+
+
+.hero-socias {
+justify-content: center;
+flex-wrap: wrap;
+}
+
+
+.bio {
+flex-direction: column;
+gap: 40px;
+padding: 40px 0;
+}
+
+
+.soft-skilss {
+flex-direction: column;
+gap: 20px;
+}
+
+
+.educacao-flex {
+flex-direction: column;
+}
+
+
+.Fedd-redes {
+flex-direction: column;
+align-items: center;
+}
+
+
+.vido-frame {
+height: auto;
+}
+
+
+.imagesdoprojecto {
+flex-direction: column;
+}
+
+
+.imagens2, .imagens1, .imagens3 {
+flex-direction: column;
+}
+
+
+.projectos {
+width: 100%;
+margin-bottom: 20px;
+}
+
+
+.info-projecto {
+flex-direction: column;
+align-items: center;
+gap: 20px;
+}
+
+
+.detalhes-cliente, .detalhes-projecto {
+width: 100%;
+}
+
+
+.contacto, .contacto-info, .contacto-form {
+width: 100%;
+flex-direction: column;
+padding: 20px;
+}
+}
+
+
+/* Mobile (celular) */
+@media (max-width: 768px) {
+    .headerprojectos {
+        flex-direction: column; /* garante um embaixo do outro */
+        gap: 15px;
+    }
+    .projectos {
+        width: 100%; /* largura total */
+        margin-bottom: 20px;
+    }
 }
